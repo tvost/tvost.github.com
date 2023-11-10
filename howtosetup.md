@@ -22,12 +22,10 @@
 <h1>Se vc quiser você pode adicionar a variavel nos arquivos processarlogin.php e processar_registro.php  </h1>
 <h1> altere em ambos os arquivos de acordo com o funcionamento desejado e de acordo com a database, ambas variaveis</h1>
 <h1>listadas aqui estao nos 2 arquivos mencionados anteriormente.</h1>
-```php
- try {
+
 $sql = "SELECT * FROM site1 WHERE email = ?"
 $sql = "SELECT * FROM site1 WHERE email = ?";
 
-```
 <h1>OU</h1>
 
 <h1> Dentro do php my admin do xampp crie uma database com o nome de "site1"</h1>
@@ -42,21 +40,28 @@ CREATE TABLE IF NOT EXISTS `site1` (
 }
 <h3> Abra o xampp inicie o php my admin e o apache e veja seu site funcionando </h3>
 #
+
+
+
+
 <h1>      ENGLISH </h1>
 
 
 
-<h1>BEGIN DOWNLOAD XAMPP
+<h1>BEGIN DOWNLOAD XAMPP</h1>
+
 <h1>AND ADD THE "main" file to the htdocs and erase the other files besides "xampp" paste, and paste the main in there</h1>
-<h2>For login and register work add data to the variables $host... accordingly with the name of the variables. <<--- in the case you have to
-add data to the variables in the following filenames:"processarlogin.php"
-                                                     "processar_registro.php</h2>
+
+<h2>For login and register work add data to the variables $host... accordingly with the name of the variables.
+in the case you have to add data to the variables in the following filenames
+<h3>processarlogin.php"</h3
+<h3>processar_registro.php</h3>
 
 <h2> The database must have colunms name usuario senha email to work typestring varchar255 because of the encrypt password to works.</h2>
 <h2>-, you should add the variables from the files mentioned earlier, specifically, "$banco" will be the name of your database.</h2>
 <h2> If u want u can change the variable</h2>
-$sql = "SELECT * FROM site1 WHERE email = ?"
-$sql = "SELECT * FROM site1 WHERE email = ?";
+"$sql = "SELECT * FROM site1 WHERE email = ?""
+"$sql = "SELECT * FROM site1 WHERE email = ?";"
 <h2> in the files mentioned before.</h2
 
    <h1>OR</h1>
