@@ -32,6 +32,7 @@ $sql = "SELECT * FROM site1 WHERE email = ?";
       use esse comando:
 
 ```php
+
 CREATE TABLE IF NOT EXISTS `site1` (
   `id` INT AUTO_INCREMENT PRIMARY KEY,
   `usuario` VARCHAR(255) NOT NULL,
@@ -39,9 +40,10 @@ CREATE TABLE IF NOT EXISTS `site1` (
   `email` VARCHAR(255) NOT NULL
 ) ENGINE=InnoDB;
 }
+
 ```
 ## Abra o xampp inicie o php my admin e o apache e veja seu site funcionando <h2>
-#
+
 
 
 
@@ -51,10 +53,8 @@ CREATE TABLE IF NOT EXISTS `site1` (
 # https://www.apachefriends.org/download.html</h1>
 
 # BEGIN DOWNLOAD XAMPP <h1>
-
-## AND ADD THE "main" file to the htdocs and erase the other files besides "xampp" paste, and paste the main in there <h2>
-
-# For login and register work add data to the variables $host... accordingly with the name of the variables in the case you have to add data to the variables in the following filenames <h1>
+ AND ADD THE "main" file to the htdocs and erase the other files besides "xampp" paste, and paste the main in there
+For login and register work add data to the variables $host... accordingly with the name of the variables in the case you have to add data to the variables in the following filenames
   # "processarlogin.php"</h4>
  # "processar_registro.php"</h4>
 
@@ -73,10 +73,9 @@ CREATE TABLE IF NOT EXISTS `site1` (
 
 # THIS <h1>
 
- -Inside php my admin xampp create a database name site1
-  use this command
+ # inside php my admin xampp create a database name site1 use this command<h1>
        
-       ```php
+```php
 
   CREATE TABLE IF NOT EXISTS `site1` (
   `id` INT AUTO_INCREMENT PRIMARY KEY,
@@ -85,9 +84,10 @@ CREATE TABLE IF NOT EXISTS `site1` (
   `email` VARCHAR(255) NOT NULL
 ) ENGINE=InnoDB;
 }
+
 ```
 
-<h1> Inside the xampp program init the xampp apache and mysql, join localhost and see your site working.</h1>
+# Go to the xampp program init the xampp apache and mysql, join localhost and see your site working <h1>
 
 
 
