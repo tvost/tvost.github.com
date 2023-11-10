@@ -1,8 +1,8 @@
 <?php
-$host = 'localhost';
-$usuario = 'id21341890_root';
-$senha = '32001171Kk@';
-$banco = 'id21341890_root';
+$host = '';
+$usuario = '';
+$senha = '';
+$banco = '';
 
 $conexao = mysqli_connect($host, $usuario, $senha, $banco);
 
