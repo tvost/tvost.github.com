@@ -29,8 +29,9 @@ $sql = "SELECT * FROM site1 WHERE email = ?";
 <h1>OU</h1>
 
 <h1> Dentro do php my admin do xampp crie uma database com o nome de "site1"</h1>
-       ² use esse comando
-       ³         ³ 
+      use esse comando:
+
+```php
 CREATE TABLE IF NOT EXISTS `site1` (
   `id` INT AUTO_INCREMENT PRIMARY KEY,
   `usuario` VARCHAR(255) NOT NULL,
@@ -38,6 +39,7 @@ CREATE TABLE IF NOT EXISTS `site1` (
   `email` VARCHAR(255) NOT NULL
 ) ENGINE=InnoDB;
 }
+```
 <h3> Abra o xampp inicie o php my admin e o apache e veja seu site funcionando </h3>
 #
 
