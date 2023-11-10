@@ -1,0 +1,106 @@
+/* Estilos padrão para o cabeçalho */
+header {
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+/* Estilos para dispositivos menores que 768px */
+!important
+@media only screen and (max-width: 768px) {
+    header {
+        padding: 10px;
+    }
+
+    nav {
+        display: block;
+    }
+
+    nav ul {
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+
+/* Estilos para dispositivos entre 769px e 1024px */
+!important
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    header {
+        font-size: 18px;
+    }
+
+    nav ul li {
+        margin-right: 20px;
+    }
+}
+
+/* Estilos para dispositivos entre 1025px e 1200px */
+!important 
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+    header {
+        /* Remova ou ajuste conforme necessário */
+    }
+}
+
+/* Estilos para dispositivos maiores que 1200px */
+!important
+@media only screen and (min-width: 1201px) {
+    header {
+        padding: 30px;
+    }
+
+    header {
+        padding: 20px;
+        color: white;
+        text-align: center;
+    }
+    
+    @media only screen and (max-width: 320px) {
+        header {
+            padding: 5px; /* Adjust as needed */
+        }
+    
+        nav {
+            display: block;
+        }
+    
+        nav ul {
+            text-align: center;
+        }
+    
+        nav ul li {
+            display: block;
+            margin-bottom: 5px; /* Adjust as needed */
+        }
+    }
+    
+    @media only screen and (min-width: 321px) and (max-width: 768px) {
+        header {
+            padding: 10px;
+
+        }
+        body {
+            width:60px
+        }
+    
+        nav {
+            display: block;
+        }
+    
+        nav ul {
+            text-align: center;
+        }
+    
+        nav ul li {
+            display: block;
+            margin-bottom: 10px;
+        }
+    }
+    
+    /* Continue with the existing media queries for other screen sizes */
+
+}

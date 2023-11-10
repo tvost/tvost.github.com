@@ -1,0 +1,6 @@
+.curriculo-img {
+    width: 100%;
+    max-width: 600px;
+    opacity: 1; /* Adiciona opacidade inicial */
+    transition: opacity 0.5s ease; /* Adiciona uma transição suave de 0.5 segundos */
+}

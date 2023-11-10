@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<php>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="mediaquerygeral.css">
+    <link rel="stylesheet" type="text/css" href="navbaresquerda.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" media="(max-width: 320px)" href="navbaresquerda.css" />
+    <link rel="stylesheet" media="(max-width: 768px)" href="navbaresquerda.css" />
+    <link rel="stylesheet" media="(max-width: 769px)" href="navbaresquerda.css" />
+    <link rel="stylesheet" media="(max-width: 1025px)" href="navbaresquerda.css" />
+    <link rel="stylesheet" media="(max-width: 1201px)" href="navbaresquerda.css" />
+    
+
+
+
+<body>
+
+    <div class="container-fluid">
+        <div class="background">
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+
+                <div class="container-fluid">
+                    <div class="background">
+                        <!-- ... Seu conteúdo anterior ... -->
+                    </div>
+            
+                    <header>
+                        <nav>
+                            <ul>
+                                <li><a href="index.html">Início</a></li>
+                                <li><a href="index2.html">Area de Convidados</a></li>
+                                <li><a href="login.html">Login</a></li>
+                                <li><a href="">Portfolio</a></li>
+                                <li><a href="register.html">Registro</a></li>
+                            </ul>
+                        </nav>
+                        <div class="logo"><span></span></div>
+            
+                        <section class="header-content">
+                            <h1>Olá</h1>
+                            <p>
+                                Seja bem-vindo ao meu portfólio e site pessoal<br>
+                                Tentando sempre inovar em vários meios.
+                            </p>
+                            
+            
+                            <style>
+                                /* Add styles for the modal */
+                                #myModal {
+                                  display: none;
+                                  position: fixed;
+                                  top: 0;
+                                  left: 0;
+                                  width: 100%;
+                                  height: 100%;
+                                  background-color: rgb(255, 255, 255);
+                                  justify-content: center;
+                                  align-items: center;
+                                }
+                            
+                                #myModal img {
+                                  max-width: 80%;
+                                  max-height: 80%;
+                                }
+                            
+                                /* Style for the close button */
+                                #closeBtn {
+                                  position: absolute;
+                                  top: 10px;
+                                  right: 10px;
+                                  cursor: pointer;
+                                  color: #fff;
+                                }
+                              </style>
+
+                              <!-- Your website content goes here -->
+                              <button onclick="openModal()">Ver CV</button>
+                            
+                              <!-- The Modal -->
+                              <div id="myModal">
+                                <span id="closeBtn" onclick="closeModal()">&times;</span>
+                                <img src="tv.png" alt="CV">
+                              </div>
+                            
+                              <script>
+                                function openModal() {
+                                  var modal = document.getElementById('myModal');
+                                  modal.style.display = 'flex';
+                                }
+                            
+                                function closeModal() {
+                                  var modal = document.getElementById('myModal');
+                                  modal.style.display = 'none';
+                                }
+                            
+                                // Close modal if user clicks outside the image
+                                window.onclick = function(event) {
+                                  var modal = document.getElementById('myModal');
+                                  if (event.target === modal) {
+                                    modal.style.display = 'none';
+                                  }
+                                };
+                              </script>
+                            
+                            <form method="post">
+                                <button type="submit" action="php/processarwpp" name="whatsappButton">Enviar mensagem no WhatsApp</button>
+                            </form>
+                        
+
+                        
+                        
+                    </header>
+            
+                    <script src="script2.js"></script>
+                    <script src=""></script>
+                </body>
+            </php>
+            </html>

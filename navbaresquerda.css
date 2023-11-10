@@ -1,0 +1,413 @@
+/* Estilos padrão */
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    box-sizing: border-box;
+    background-size: cover;
+    height: auto;
+    width: auto;
+    margin: 0; /* Remova a margem padrão do corpo */
+}
+
+.container-fluid {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background: #000; /* Cor de fundo preta */
+}
+
+/* ============= Animation background ========= */
+.background {
+    background: linear-gradient(132deg, #00FF00, #000, #00CC00); /* Gradiente verde */
+    background-size: 400% 400%;
+    animation: Gradient 15s ease infinite;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    padding: 0;
+    margin: 0px;
+}
+
+.cube {
+    position: absolute;
+    top: 80vh;
+    left: 45vw;
+    width: 10px;
+    height: 10px;
+    border: solid 1px #00CC00; /* Borda verde clara */
+    transform-origin: top left;
+    transform: scale(0) rotate(0deg) translate(-50%, -50%);
+    animation: cube 12s ease-in forwards infinite;
+}
+
+.cube:nth-child(2n) {
+    border-color: #00FF00; /* Borda verde */
+}
+
+.cube:nth-child(2) {
+    animation-delay: 2s;
+    left: 25vw;
+    top: 40vh;
+}
+
+.cube:nth-child(3) {
+    animation-delay: 4s;
+    left: 75vw;
+    top: 50vh;
+}
+
+.cube:nth-child(4) {
+    animation-delay: 6s;
+    left: 90vw;
+    top: 5vh;
+}
+
+.cube:nth-child(5) {
+    animation-delay: 8s;
+    left: 10vw;
+    top: 60vh;
+}
+
+.cube:nth-child(6) {
+    animation-delay: 10s;
+    left: 40vw;
+    top: 5vh;
+}
+
+/* ================= Header ============ */
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* navbar */
+nav {
+    color: #00FF00; /* Texto verde */
+    float: right;
+    margin: 30px 5vw; /* Reduza a margem para dispositivos menores */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    float: left;
+    transition: .3s;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #00CC00; /* Texto verde claro */
+    transition: .5;
+    font-size: 15px;
+    margin-left: 16px;
+}
+
+nav ul li:hover a {
+    text-decoration: none;
+    color: #00FF00; /* Texto verde */
+}
+
+nav ul li:hover {
+    height: auto; /* Tamanho automático ao passar o mouse */
+    padding-top: 10px;
+    margin-top: 0;
+    background: #00CC00; /* Fundo verde claro */
+    text-decoration: none;
+    transform: skew(15deg);
+}
+
+/* Logo */
+.logo span{
+    width: 4px; /* Defina a largura desejada */
+    height: 4px; /* Defina a altura desejada */
+    background: #00FF00 url('x.png') no-repeat center center; /* Cor de fundo e imagem da logo */
+    background-size: cover; /* Ajusta o tamanho da imagem para cobrir completamente a div */
+    margin: 2vw 5vw; /* Ajuste as margens conforme necessário */
+    float: left;
+    transform: rotate(-0deg);
+}
+
+/* Header content & title & button*/
+.header-content {
+    margin-top: 25vh;
+    text-align: center;
+    color: #00FF00; /* Texto verde */
+}
+
+.header-content h1 {
+    text-transform: uppercase;
+    font-size: 3em;
+    letter-spacing: 1px;
+}
+
+.header-content p {
+    font-size: 20px;
+    line-height: 1.5;
+    margin: 20px auto;
+}
+
+.header-content button {
+    width: 30vw; /* Largura relativa */
+    margin: 20px 10px;
+    color: #00FF00; /* Texto verde */
+    font-size: 2vw; /* Tamanho relativo */
+    border: 1px solid #00CC00; /* Borda verde clara */
+    font-weight: 500;
+    background: #00CC00; /* Fundo verde claro */
+    border-radius: 20px;
+    padding: 1vw; /* Padding relativo */
+    cursor: pointer;
+    transition: .3s;
+}
+
+.header-content button:hover {
+    border-radius: 0;
+}
+
+/* Animate Background*/
+@keyframes Gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes cube {
+    from {
+        transform: scale(0) rotate(0deg) translate(-50%, -50%);
+        opacity: 1;
+    }
+
+    to {
+        transform: scale(1) rotate(360deg) translate(-50%, -50%);
+        opacity: 0;
+    }
+}
+
+/* Adicione suas media queries aqui para ajustar estilos para diferentes tamanhos de tela */
+
+/* Estilos para dispositivos móveis */
+@media only screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    .background {
+        height: 62 /* Ajuste conforme necessário para dispositivos móveis */
+    }
+
+    .cube {
+        top: 30vh; /* Ajuste conforme necessário para dispositivos móveis */
+        left: 50vw; /* Ajuste conforme necessário para dispositivos móveis */
+        width: 5px; /* Ajuste conforme necessário para dispositivos móveis */
+        height: 5px; /* Ajuste conforme necessário para dispositivos móveis */
+    }
+
+    .cube:nth-child(2) {
+        left: 50vw; /* Ajuste conforme necessário para dispositivos móveis */
+        top: 15vh; /* Ajuste conforme necessário para dispositivos móveis */
+    }
+
+    .cube:nth-child(3) {
+        left: 80vw; /* Ajuste conforme necessário para dispositivos móveis */
+        top: 25vh; /* Ajuste conforme necessário para dispositivos móveis */
+    }
+
+    .cube:nth-child(4) {
+        left: 90vw; /* Ajuste conforme necessário para dispositivos móveis */
+        top: 5vh; /* Ajuste conforme necessário para dispositivos móveis */
+    }
+
+    .cube:nth-child(5) {
+        left: 10vw; /* Ajuste conforme necessário para dispositivos móveis */
+        top: 60vh; /* Ajuste conforme necessário para dispositivos móveis */
+    }
+
+    .cube:nth-child(6) {
+        left: 40vw; /* Ajuste conforme necessário para dispositivos móveis */
+        top: 5vh; /* Ajuste conforme necessário para dispositivos móveis */
+    }
+
+    nav {
+        margin: 15px 5vw; /* Ajuste conforme necessário para dispositivos móveis */
+    }
+
+    nav ul li a {
+        font-size: 12px; /* Ajuste conforme necessário para dispositivos móveis */
+        margin-left: 8px; /* Ajuste conforme necessário para dispositivos móveis */
+    }
+
+    .logo span {
+        margin: 1vw 2vw; /* Ajuste conforme necessário para dispositivos móveis */
+    }
+
+    .header-content {
+        margin-top: 10vh; /* Ajuste conforme necessário para dispositivos móveis */
+    }
+
+    .header-content h1 {
+        font-size: 2.5em; /* Ajuste conforme necessário para dispositivos móveis */
+        width:auto
+    }
+
+    .header-content p {
+        font-size: 16px; /* Ajuste conforme necessário para dispositivos móveis */
+        margin: 15px auto; /* Ajuste conforme necessário para dispositivos móveis */
+        width:auto
+    }
+
+    .header-content button {
+        width: 80vw; /* Ajuste conforme necessário para dispositivos móveis */
+        font-size: 3vw; /* Ajuste conforme necessário para dispositivos móveis */
+        margin: 15px 5vw; /* Ajuste conforme necessário para dispositivos móveis */
+    }
+
+    /* Estilos padrão para o cabeçalho */
+header {
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+/* Estilos para dispositivos menores que 768px */
+!important
+@media only screen and (max-width: 768px) {
+    header {
+        padding: 10px;
+        
+    }
+
+    nav {
+        display: block;
+        width:auto
+    }
+
+    nav ul {
+        text-align: center;
+        width:auto
+    }
+
+    nav ul li {
+        width:auto
+        display: block;
+        margin-bottom: 10px;
+    }
+    body {
+        width:60px
+    }
+}
+
+/* Estilos para dispositivos entre 769px e 1024px */
+!important
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    header {
+        font-size: 18px;
+       width: auto
+    }
+
+    nav ul li {
+        margin-right: 20px;
+        width: auto
+    }
+    body {
+        width:60px
+    }
+}
+
+/* Estilos para dispositivos entre 1025px e 1200px */
+!important 
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+    width: auto
+    header {
+        padding:45px
+        width: auto
+    }
+    body {
+        width:60px
+    }
+}
+
+/* Estilos para dispositivos maiores que 1200px */
+!important
+@media only screen and (min-width: 1201px) {
+    header {
+        padding: 30px;
+        width: auto
+    }
+    body {
+        width:60px
+    }
+
+    header {
+        padding: 20px;
+        color: white;
+        text-align: center;
+    }
+    
+    @media only screen and (max-width: 320px) {
+        header {
+            padding: 5px;
+            width: 15px; /* Adjust as needed */
+        }
+        body {
+            width:60px
+        }
+    
+        nav {
+            display: block;
+        }
+    
+        nav ul {
+            text-align: center;
+        }
+    
+        nav ul li {
+            display: block;
+            margin-bottom: 5px; /* Adjust as needed */
+        }
+    }
+    
+    @media only screen and (min-width: 321px) and (max-width: 768px) {
+        header {
+            padding: 10px;
+
+        }
+        body {
+            width:60px
+        }
+    
+        nav {
+            display: block;
+        }
+    
+        nav ul {
+            text-align: center;
+        }
+    
+        nav ul li {
+            display: block;
+            margin-bottom: 10px;
+        }
+    }
+    
+    /* Continue with the existing media queries for other screen sizes */
+
+}
+
+}
