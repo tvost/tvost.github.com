@@ -15,10 +15,12 @@
 <h4>A database dos arquivos php deve conter usuario senha email para funcionar, type VARCHAR255 por causa da encryptação da senha.</h4>
 <h4>você deve adicionar as variaveis dos arquivos ditos anteriormente, especificamente a "$banco" vai ser o nome da sua database</h4>
 
-<h1>Se vc quiser você pode adicionar a variavel </h1>
-" try {
+<h1>Se vc quiser você pode adicionar a variavel nos arquivos processarlogin.php e processar_registro.php  </h1>
+```php
+ try {
     // Verificar se o e-mail já existe na tabela
     $verificarEmail = "SELECT * FROM "O NOME DA COLUNA DA DATABASE CONTENDO USUARIO SENHA E EMAIL"<<<<""" WHERE email = ?";"
+```
 <h1>OU</h1>
 
 <h1> Dentro do php my admin do xampp crie uma database com o nome de "site1"</h1>
