@@ -3,7 +3,7 @@
 
 #
 
-https://www.apachefriends.org/download.html
+<h1>https://www.apachefriends.org/download.html</h1>
 
 <h1>Baixe o XAMPP</h1>
 
@@ -43,8 +43,8 @@ CREATE TABLE IF NOT EXISTS `site1` (
 add data to the variables in the following filenames:"processarlogin.php"
                                                      "processar_registro.php</h2>
 
-<h3>3.a. The database must have colunms name usuario senha email to work typestring varchar255 because of the encrypt password to works.</h3>
-<h3>3.b-, you should add the variables from the files mentioned earlier, specifically, "$banco" will be the name of your database.</h3>
+<h3> The database must have colunms name usuario senha email to work typestring varchar255 because of the encrypt password to works.</h3>
+<h3>-, you should add the variables from the files mentioned earlier, specifically, "$banco" will be the name of your database.</h3>
 <h1> If u want u can change the variable</h1>
  $verificarEmail = "SELECT * FROM ""<<<(HEAR THE NAME OF THE COLUM OF DATABASE INSIDE THE QUOTATION) WHERE email = ?";
    <h1>OR</h1>
