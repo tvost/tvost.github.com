@@ -1,12 +1,14 @@
 
 
-<PORTUGUESE></PORTUGUESE> 1-# 
-<ENGLISH><ENGLISH>2-#
 
 #
 
 https://www.apachefriends.org/download.html
-Para começar adicione os arquivos principais para o htdocs do xampp apague todas MENOS a "xampp" e coloque os arquivos dentro do htdocs
+
+<h1>Baixe o XAMPP</h1>
+
+<h2Para começar adicione os arquivos principais para o htdocs do xampp apague todas MENOS a "xampp" e coloque os arquivos dentro do htdocs </h2>
+
 
 
  
